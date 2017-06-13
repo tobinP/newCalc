@@ -1,0 +1,11 @@
+<h1>Calculus Canning Calculator</h1>
+
+<form action="{% url 'calc:result' 100 %}" method="get">
+{% csrf_token %}
+    <label>Shipping Container Volume: 32.2514 m^3</label><br>
+    <label>Can Height: </label>
+    <input type="text" name="canHeight" id="02" value="" /><br>
+    <label>Can Radius: </label>
+    <input type="text" name="canRadius" id="03" value="" /><br>
+    <input type="submit" value="Crunch The Numbers" />
+</form>
